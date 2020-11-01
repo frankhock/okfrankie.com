@@ -1,8 +1,10 @@
 import { ThemeProvider } from 'theme-ui'
 
+import { theme } from '../theme'
+
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Component {...pageProps} />
     </ThemeProvider>
   )
