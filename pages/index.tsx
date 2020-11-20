@@ -8,7 +8,7 @@ export default function Home() {
     <MainLayout>
       <Container>
         <Heading as="h1">
-          Full-stack Developer at Cloudnexa. Based in Lancaster, PA.
+          Full-Stack Developer at Cloudnexa. Based in Lancaster, PA.
         </Heading>
       </Container>
     </MainLayout>
