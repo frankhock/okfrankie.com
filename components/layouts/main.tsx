@@ -45,17 +45,28 @@ const ContentArea: React.FC = ({ children }) => {
   )
 }
 
-export const MainLayout: React.FC = ({ children }) => {
+type MainLayoutProps = {
+  title?: string
+}
+
+export const MainLayout: React.FC<MainLayoutProps> = ({
+  children,
+  title = 'Frank Hock - Full-Stack Developer',
+}) => {
   return (
     <>
       <Head>
-        <title>O.K. Frankie</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Merriweather&family=Rock+Salt&display=swap"
           rel="stylesheet"
         />
+
+        <meta name="og:site_name" content="O.K. Frankie" />
+        <meta name="og:title" content={title}></meta>
+        <meta name="og:image" content="/splash.jpg"></meta>
       </Head>
 
       <Wrapper>
