@@ -6,4 +6,8 @@ export const theme = {
     ...deep.fonts,
     heading: 'Merriweather',
   },
+  lineHeights: {
+    ...deep.lineHeights,
+    heading: 1.375,
+  },
 }
