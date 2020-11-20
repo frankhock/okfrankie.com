@@ -49,7 +49,7 @@ export const MainLayout: React.FC = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Ok, Frankie.</title>
+        <title>O.K. Frankie</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
