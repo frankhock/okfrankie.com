@@ -2,16 +2,14 @@ import React from 'react'
 import { Box } from 'theme-ui'
 import Head from 'next/head'
 import Link from 'next/link'
+import { Footer } from 'components/layout/footer'
 
 const Wrapper: React.FC = ({ children }) => {
   return (
     <Box
       sx={{
         minHeight: '100vh',
-        backgroundImage: `url(/splash.jpg)`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
+        background: 'hsl(230, 25%, 18%)',
       }}
     >
       <Box></Box>
@@ -24,23 +22,24 @@ const ContentArea: React.FC = ({ children }) => {
   return (
     <Box
       sx={{
+        mx: 'auto',
         minHeight: '100vh',
-        maxWidth: '48rem',
+        maxWidth: ['48rem', '60rem'],
         p: [4, 5],
-        bg: '#081326',
       }}
     >
       <Box as="header" sx={{ pb: [5] }}>
         <Link href="/">
           <Box
             as="a"
-            sx={{ fontFamily: 'Rock Salt', fontWeight: 400, fontSize: [2] }}
+            sx={{ fontFamily: 'Rock Salt', fontWeight: 400, fontSize: [2, 3] }}
           >
-            O.K. Frankie
+            Frank Hock
           </Box>
         </Link>
       </Box>
       <Box as="main">{children}</Box>
+      <Footer />
     </Box>
   )
 }
@@ -51,7 +50,7 @@ type MainLayoutProps = {
 
 export const MainLayout: React.FC<MainLayoutProps> = ({
   children,
-  title = 'Frank Hock - Full-Stack Developer',
+  title = 'Frank Hock - Lancaster, PA',
 }) => {
   return (
     <>
