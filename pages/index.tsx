@@ -2,10 +2,12 @@ import { Box, Heading, Text } from 'theme-ui'
 
 import { Container } from 'components/layout/container'
 import { MainLayout } from 'components/layouts'
+import { Seo } from 'components/seo'
 
 export default function Home() {
   return (
     <MainLayout>
+      <Seo />
       <Container>
         <Heading as="h1" sx={{ mb: 3, fontSize: [5, 6] }}>
           Human. Thinker. Developer.
