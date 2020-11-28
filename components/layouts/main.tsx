@@ -28,7 +28,7 @@ const ContentArea: React.FC = ({ children }) => {
         p: [4, 5],
       }}
     >
-      <Box as="header" sx={{ pb: [5] }}>
+      <Box as="header" sx={{ pb: [5, 6] }}>
         <Link href="/">
           <Box
             as="a"
