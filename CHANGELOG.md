@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/frankhock/okfrankie.com/compare/v0.1.0...v0.1.2) (2021-02-19)
+
+
+### Bug Fixes
+
+* typo in readme ([4cc2d7c](https://github.com/frankhock/okfrankie.com/commit/4cc2d7c368b5901cb01aad3b68e367a248b0ab6c))
+
 ### [0.1.1](https://github.com/frankhock/okfrankie.com/compare/v0.1.0...v0.1.1) (2021-02-19)
 
 ## 0.1.0 (2021-02-19)
